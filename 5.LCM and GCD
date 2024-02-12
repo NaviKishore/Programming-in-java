@@ -1,0 +1,18 @@
+import java.util.*;
+class fibonacci{
+	public static void main(string[] args){
+		int arr[]=16,20);
+		int lcm=arr[0];
+		for(int i=0;i<arr.length();i++){
+			gcd=findGCD(arr[i],lcm);
+			lcm=(lcm*arr[i])/gcd;
+		}
+		system.out.println("lcm:"+lcm);
+		system.out.println("GCD:"+gcd);
+	}
+	public static int findGCD(int a,int b){
+		if(b==0)
+		return a;
+		     return findGCD(b,a%b);
+	}
+}
